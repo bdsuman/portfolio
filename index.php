@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Digilab - Free Bootstrap 4 Template by Colorlib</title>
+  <title>Coderstream - Software Agency</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
   <link rel="stylesheet" href="css/styleOne.css" />
@@ -13,7 +13,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
     id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.php">Digi<span>Lab</span></a>
+      <a class="navbar-brand" href="index.php">Coder<span>Stream</span></a>
       <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
         data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
@@ -32,7 +32,7 @@
     </div>
   </nav>
   <section id="home-section" class="hero">
-    <h3 class="vr">Welcome to DigiLab</h3>
+    <h3 class="vr">Welcome to Coderstream</h3>
     <div class="home-slider js-fullheight owl-carousel">
       <div class="slider-item js-fullheight">
         <div class="overlay"></div>
@@ -46,7 +46,7 @@
             <div class="one-forth d-flex js-fullheight align-items-center ftco-animate"
               data-scrollax=" properties: { translateY: '70%' }">
               <div class="text">
-                <span class="subheading">Welcome to the digilab</span>
+                <span class="subheading">Welcome to the Coderstream</span>
                 <h1 class="mb-4 mt-3">Small Details Make A Big <span>Impression</span></h1>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
                   paradisematic country.</p>
@@ -68,7 +68,7 @@
             <div class="one-forth d-flex js-fullheight align-items-center ftco-animate"
               data-scrollax=" properties: { translateY: '70%' }">
               <div class="text">
-                <span class="subheading">Welcome to the digilab</span>
+                <span class="subheading">Welcome to the Coderstream</span>
                 <h1 class="mb-4 mt-3"><span>Strategic</span> Design And <span>Technology</span> Agency</h1>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
                   paradisematic country.</p>
@@ -326,7 +326,7 @@
           <div class="py-md-5">
             <div class="row justify-content-start pb-3">
               <div class="col-md-12 heading-section ftco-animate">
-                <span class="subheading">Welcome to digilab</span>
+                <span class="subheading">Welcome to Coderstream</span>
                 <h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">We Are Digital Agency</h2>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
                   paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
@@ -657,7 +657,7 @@
               <span class="icon-map-signs"></span>
             </div>
             <h3 class="mb-4">Address</h3>
-            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+            <p>Sadar, Mymensingh</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -666,7 +666,7 @@
               <span class="icon-phone2"></span>
             </div>
             <h3 class="mb-4">Contact Number</h3>
-            <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+            <p><a href="tel:+8801921440084">+ 880 1921 440084</a></p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -675,8 +675,7 @@
               <span class="icon-paper-plane"></span>
             </div>
             <h3 class="mb-4">Email Address</h3>
-            <p><a href="/#bdd4d3dbd2fdc4d2c8cfced4c9d893ded2d0"><span class="__cf_email__"
-                  data-cfemail="0d64636b624d7462787f7e647968236e6260">[email&#160;protected]</span></a></p>
+            <p><a href="mailto:mesumanbd@gmail.com">mesumanbd@gmail.com</a></p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -685,27 +684,55 @@
               <span class="icon-globe"></span>
             </div>
             <h3 class="mb-4">Website</h3>
-            <p><a href="#">yoursite.com</a></p>
+            <p><a href="#">coderstream.com</a></p>
           </div>
         </div>
       </div>
+      <?php
+        if (isset($_POST['contact'])) {
+          // print_r($_POST);
+          // exit;
+          $name     = $_POST['name'];
+          $email = $_POST['email'];
+          $mobile   = $_POST['mobile'];
+          $subject   = $_POST['subject'];
+          $message   = $_POST['message'];
+      
+          if (empty($name) || empty($email) || empty($mobile) || empty($subject) || empty($message)) {
+              $alert = "All fields are required";
+          } else {   
+                $alert = "Message Send Succesfully.";
+          }
+      
+         echo '<script>alert("'.$alert.'");</script>';
+      }
+        
+        ?>
       <div class="row no-gutters block-9">
         <div class="col-md-6 order-md-last d-flex">
-          <form action="#" class="bg-light p-5 contact-form">
+          <form action="index.php" method="POST" class="bg-light p-5 contact-form">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Name">
+              <label for="name">Name *</label>
+              <input type="text" class="form-control" name="name"  placeholder="Your Name">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Email">
+            <label for="email">Name *</label>
+              <input type="text" class="form-control" id="email" name="email" placeholder="Your Email">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Subject">
+              <label for="mobile">Mobile *</label>
+              <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Your Mobile">
             </div>
             <div class="form-group">
-              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+              <label for="subject">Subject *</label>
+              <input type="text" class="form-control" id="subject" name="subject"  placeholder="Subject">
             </div>
             <div class="form-group">
-              <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+              <label for="message">Message *</label>
+              <textarea  cols="30" rows="7" name="message" id="message" class="form-control"  placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Send Message" name="contact" class="btn btn-primary py-3 px-5">
             </div>
           </form>
         </div>
@@ -720,7 +747,7 @@
       <div class="row mb-5">
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">About DigiLab</h2>
+            <h2 class="ftco-heading-2">About Coderstream</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
               blind texts.</p>
             <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
@@ -759,11 +786,10 @@
             <h2 class="ftco-heading-2">Have a Questions?</h2>
             <div class="block-23 mb-3">
               <ul>
-                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San
-                    Francisco, California, USA</span></li>
-                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                <li><a href="#"><span class="icon icon-envelope"></span><span class="text"><span class="__cf_email__"
-                        data-cfemail="670e090108271e08121503080a060e094904080a">[email&#160;protected]</span></span></a>
+                <li><span class="icon icon-map-marker"></span><span class="text">Sadar, Mymensingh
+                    </span></li>
+                <li><a href="tel:+8801921440084"><span class="icon icon-phone"></span><span class="text">+880 1921 440084</span></a></li>
+                <li><a href="mailto:mesumanbd@gmail.com"><span class="icon icon-envelope"></span><span class="text">mesumanbd@gmail.com</span></a>
                 </li>
               </ul>
             </div>
@@ -775,9 +801,9 @@
           <p>
             Copyright &copy;
             <script data-cfasync="false" src="js/email-decode.min.js"></script>
-            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
-            <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com"
-              target="_blank">Colorlib</a>
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This develop is made with
+            <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://coderstream.com"
+              target="_blank">Suman Sen</a>
           </p>
         </div>
       </div>
@@ -815,11 +841,7 @@
   </script>
   <script defer src="js/beacon.min.js"
     data-cf-beacon='{"rayId":"680bfffb4b68fdfe","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.8.1","si":10}'></script>
-  <center>
-    <font size="2">This is the free demo result. For a full version of this website, please go to <a
-        href="https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/">Website
-        Downloader</a></font>
-  </center>
+ 
 </body>
 
 </html>

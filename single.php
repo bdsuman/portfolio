@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Digilab - Free Bootstrap 4 Template by Colorlib</title>
+  <title>Coderstream - Software Agency</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
@@ -13,7 +13,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
     id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.php">Digi<span>Lab</span></a>
+      <a class="navbar-brand" href="index.php">Coder<span>Stream</span></a>
       <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
         data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
@@ -42,7 +42,7 @@
         <div class="col-md-9 ftco-animate pb-5 text-center">
           <h1 class="mb-3 bread">Our Stories</h1>
           <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home <i
-                  class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="blog.php">Blog <i
+                  class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="single.php">Blog <i
                   class="ion-ios-arrow-forward"></i></a></span> <span>Blog
               Single <i class="ion-ios-arrow-forward"></i></span></p>
         </div>
@@ -234,7 +234,7 @@
             </ul>
             <div class="comment-form-wrap pt-5">
               <h3 class="mb-5">Leave a comment</h3>
-              <form action="#" class="p-5 bg-light">
+              <form action="#" method="POST"  class="p-5 bg-light">
                 <div class="form-group">
                   <label for="name">Name *</label>
                   <input type="text" class="form-control" id="name">
@@ -252,7 +252,7 @@
                   <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
                 </div>
                 <div class="form-group">
-                  <input type="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
+                  <input type="submit" value="Post Comment" onclick="alert('Thank You Comment.')" class="btn py-3 px-4 btn-primary">
                 </div>
               </form>
             </div>
@@ -346,7 +346,7 @@
       <div class="row mb-5">
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">About DigiLab</h2>
+            <h2 class="ftco-heading-2">About Coderstream</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
               blind texts.</p>
             <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
@@ -385,11 +385,10 @@
             <h2 class="ftco-heading-2">Have a Questions?</h2>
             <div class="block-23 mb-3">
               <ul>
-                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San
-                    Francisco, California, USA</span></li>
-                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                <li><a href="#"><span class="icon icon-envelope"></span><span class="text"><span class="__cf_email__"
-                        data-cfemail="c2abaca4ad82bbadb7b0a6adafa3abaceca1adaf">[email&#160;protected]</span></span></a>
+                <li><span class="icon icon-map-marker"></span><span class="text">Sadar, Mymensingh
+                    </span></li>
+                <li><a href="tel:+8801921440084"><span class="icon icon-phone"></span><span class="text">+880 1921 440084</span></a></li>
+                <li><a href="mailto:mesumanbd@gmail.com"><span class="icon icon-envelope"></span><span class="text">mesumanbd@gmail.com</span></a>
                 </li>
               </ul>
             </div>
@@ -401,9 +400,9 @@
           <p>
             Copyright &copy;
             <script data-cfasync="false" src="js/email-decode.min.js"></script>
-            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
-            <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com"
-              target="_blank">Colorlib</a>
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This develop is made with
+            <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://coderstream.com"
+              target="_blank">Suman Sen</a>
           </p>
         </div>
       </div>
